@@ -1,5 +1,5 @@
 import React from 'react';
-import './Offers.css';
+import './offers.css';
 import offer1 from "../../Images/offer1.jpg"
 import offer2 from "../../Images/offer2.jpg"
 import offer3 from "../../Images/offer3.jpg"

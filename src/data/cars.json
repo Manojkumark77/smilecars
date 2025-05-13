@@ -1,0 +1,146 @@
+[
+  {
+    "brand": "Mahindra",
+    "model": "TUV 300",
+    "image": "https://imgd.aeplcdn.com/1920x1080/cw/ec/39470/Mahindra-TUV300-Right-Front-Three-Quarter-155763.jpg?wm=0&q=80&q=80",
+    "fuel": "Diesel",
+    "seater": 7,
+    "transmission": "Manual",
+    "pricePerDay": 2500
+  },
+  {
+    "brand": "Toyoto",
+    "model": "Fortuner",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.12-lmb3u11DzGL5lD_X8XgHaFF?rs=1&pid=ImgDetMain",
+    "fuel": "Diesel",
+    "seater": 7,
+    "transmission": "Automatic",
+    "pricePerDay": 4500
+  },
+  {
+    "brand": "Mahindra",
+    "model": "KUV 100",
+    "image": "https://imgd.aeplcdn.com/1056x594/n/9abrb5a_1433462.jpg?q=80",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Manual",
+    "pricePerDay": 2000
+  },
+  {
+    "brand": "Ford",
+    "model": "Ecosport",
+    "image": "https://www.financialexpress.com/wp-content/uploads/2024/09/Ford-Endeavour-Everest.jpg",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Automatic",
+    "pricePerDay": 2200
+  },
+  {
+    "brand": "Audi",
+    "model": "Audi A4",
+    "image": "https://blog.enginefitted.co.uk/wp-content/uploads/2016/07/Audi-A4.png",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Automatic",
+    "pricePerDay": 5000
+  },
+  {
+    "brand": "Tata",
+    "model": "Safari",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.2P73XAfZIMlCBrA7nJ2g2gAAAA?rs=1&pid=ImgDetMain",
+    "fuel": "Diesel",
+    "seater": 7,
+    "transmission": "Manual",
+    "pricePerDay": 3500
+  },
+  {
+    "brand": "Honda",
+    "model": "Aura",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.VK5zu9tOjh-mrYGfAR_wFgHaFj?w=825&h=618&rs=1&pid=ImgDetMain",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Manual",
+    "pricePerDay": 2100
+  },
+  {
+    "brand": "Tempo",
+    "model": "Force",
+    "image": "https://livingkashmirtravels.in/wp-content/uploads/2015/02/Tempo-Traveller-17-Seater.png",
+    "fuel": "Diesel",
+    "seater": 17,
+    "transmission": "Manual",
+    "pricePerDay": 5000
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio",
+    "image": "https://images.91wheels.com/assets/b_images/main/models/profile/profile1731476496.jpg?width=420&q=60?w=420&q=60",
+    "fuel": "Diesel",
+    "seater": 7,
+    "transmission": "Manual",
+    "pricePerDay": 2800
+  },
+  {
+    "brand": "Audi",
+    "model": "Audi Q5",
+    "image": "https://www.pngarts.com/files/8/White-Audi-Car-PNG-High-Quality-Image.png",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Automatic",
+    "pricePerDay": 6000
+  },
+  {
+    "brand": "Tata",
+    "model": "Zest",
+    "image": "https://tse3.mm.bing.net/th/id/OIP.2P73XAfZIMlCBrA7nJ2g2gAAAA?rs=1&pid=ImgDetMain",
+    "fuel": "Diesel",
+    "seater": 5,
+    "transmission": "Manual",
+    "pricePerDay": 1800
+  },
+  {
+    "brand": "Toyoto",
+    "model": "Innova",
+    "image": "https://tse4.mm.bing.net/th/id/OIP.xVwZAf_i1Le5TAl4hjs5TAHaE8?w=900&h=600&rs=1&pid=ImgDetMain",
+    "fuel": "Diesel",
+    "seater": 7,
+    "transmission": "Manual",
+    "pricePerDay": 3200
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "image": "https://tse1.mm.bing.net/th/id/OIP.tlBddhgfmOmvunWVsJZT4wHaEK?rs=1&pid=ImgDetMain",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Automatic",
+    "pricePerDay": 3300
+  },
+  {
+    "brand": "Tempo",
+    "model": "Force",
+    "image": "https://5.imimg.com/data5/OO/FT/MY-9805493/15-seater-tempo-traveller-rental-1000x1000.jpg",
+    "fuel": "Diesel",
+    "seater": 15,
+    "transmission": "Manual",
+    "pricePerDay": 4800
+  },
+  {
+    "brand": "Ford",
+    "model": "Bronco",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.fmSyfryRs0_8yNqFlBDO5AHaE8?rs=1&pid=ImgDetMain",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Automatic",
+    "pricePerDay": 3700
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch",
+    "image": "https://media.zigcdn.com/media/model/2021/Oct/punch_600x400.jpg",
+    "fuel": "Petrol",
+    "seater": 5,
+    "transmission": "Manual",
+    "pricePerDay": 1900
+  }
+]
