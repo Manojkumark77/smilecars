@@ -2,7 +2,7 @@
   text-align: center;
   padding: 30px 20px;
   background-color: ghostwhite;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .fleet-container h2 {
@@ -78,10 +78,11 @@
   color: black;
 }
 
-.fleet-card button {
+.fleet-card a {
   display: inline;
   font-size: 15px;
   background: blue;
+  text-decoration: none;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -89,6 +90,6 @@
   cursor: pointer;
 }
 
-.fleet-card button:hover {
+.fleet-card a:hover {
   background: darkblue;
 }

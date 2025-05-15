@@ -1,8 +1,8 @@
-import React from 'react';
-import './offers.css';
-import offer1 from "../../Images/offer1.jpg"
-import offer2 from "../../Images/offer2.jpg"
-import offer3 from "../../Images/offer3.jpg"
+import React from "react";
+import "./offers.css";
+import offer1 from "../../Images/offer1.jpg";
+import offer2 from "../../Images/offer2.jpg";
+import offer3 from "../../Images/offer3.jpg";
 
 const offers = [
   {
@@ -35,7 +35,9 @@ const TrendingOffers = () => {
             <img src={offer.image} alt="Offer" className="offer-image" />
             <div className="offer-details">
               <h3>{offer.discount}</h3>
-              <p><strong>Use Code: {offer.code}</strong></p>
+              <p>
+                <strong>Use Code: {offer.code}</strong>
+              </p>
               <p>{offer.description}</p>
             </div>
           </div>

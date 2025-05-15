@@ -1,6 +1,6 @@
-import React from 'react';
-import './aboutus.css';
-import Cars from "../../Images/cars.jpg"
+import React from "react";
+import "./AboutUs.css";
+import aboutUsBannerImage from "../../Images/cars.jpg";
 
 const AboutUs = () => {
   return (
@@ -13,11 +13,11 @@ const AboutUs = () => {
             High-Quality Customer Service & Seamless Rental Experience
           </p>
           <div className="about-buttons">
-            <button className="about-btn">
+            <button type="button" className="about-btn">
               BOOK YOUR CAR
             </button>
-            <button className="about-btn">
-              +91 96552 14888
+            <button type="button" className="about-btn">
+              +91 73393 75459
             </button>
           </div>
         </div>
@@ -26,7 +26,7 @@ const AboutUs = () => {
       <div className="about-info-section">
         <div className="info-container">
           <img
-            src={Cars}
+            src={aboutUsBannerImage}
             alt="About Smilecars"
             className="info-image"
           />
@@ -35,14 +35,22 @@ const AboutUs = () => {
               GET TO KNOW <span className="highlight">ABOUT SMILECARS</span>
             </h2>
             <p>
-            Welcome to SmileCars, your trusted partner in affordable and convenient self-driving car rentals in Chennai. Whether you're planning a weekend getaway, a business trip, or a city ride, SmileCars gives you the freedom to choose from a wide range of well-maintained, comfortable vehicles – all at competitive prices.<br></br>
-
-            Our mission is to make car rental easy, flexible, and accessible for everyone. With a user-friendly online booking system, transparent pricing, and round-the-clock customer support, SmileCars ensures a seamless rental experience from booking to return.<br></br>
-            At SmileCars, <strong> your journey is our priority </strong> – drive with confidence, comfort, and a smile
-              
+              Welcome to SmileCars, your trusted partner in affordable and
+              convenient self-driving car rentals in Chennai. Whether you're
+              planning a weekend getaway, a business trip, or a city ride,
+              SmileCars gives you the freedom to choose from a wide range of
+              well-maintained, comfortable vehicles – all at competitive prices.
+              <br></br>
+              Our mission is to make car rental easy, flexible, and accessible
+              for everyone. With a user-friendly online booking system,
+              transparent pricing, and round-the-clock customer support,
+              SmileCars ensures a seamless rental experience from booking to
+              return.<br></br>
+              At SmileCars, <strong> your journey is our priority </strong> –
+              drive with confidence, comfort, and a smile
             </p>
-            <button className="cta-button">
-              BOOK YOUR FAVORITE CAR!! 
+            <button type="button" className="cta-button">
+              BOOK YOUR FAVORITE CAR!!
             </button>
           </div>
         </div>
@@ -63,7 +71,6 @@ const AboutUs = () => {
               <p>Happy Customers</p>
             </div>
             <div className="stat-card">
-              
               <h4>15+</h4>
               <p>Years of Experience</p>
             </div>
