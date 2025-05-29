@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import carsData from "../../data/cars.json";
+import axios from "axios";
 import "./cardetails.css";
 
 const CarDetails = () => {
   const { model } = useParams();
   const navigate = useNavigate();
 
-  const car = carsData.find((c) => c.model === decodeURIComponent(model));
+  const [car, setCar] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
+  useEffect(() => {
+    axios
+      .get("http://localhost:2001/cars")
+      .then((res) => {
+        const foundCar = res.data.find(
+          (c) => c.model === decodeURIComponent(model)
+        );
+        setCar(foundCar);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch car details:", err);
+        setError("Failed to load car details");
+        setLoading(false);
+      });
+  }, [model]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
   if (!car) return <p>Car not found</p>;
 
   return (

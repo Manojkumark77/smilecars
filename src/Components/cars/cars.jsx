@@ -12,12 +12,12 @@ const Fleet = () => {
 
   const location = useLocation();
 
-  const getQueryParam = (key) => {
-    const params = new URLSearchParams(location.search);
-    return params.get(key);
-  };
-
   useEffect(() => {
+    const getQueryParam = (key) => {
+      const params = new URLSearchParams(location.search);
+      return params.get(key);
+    };
+
     axios
       .get("http://localhost:2001/cars")
       .then((res) => {
