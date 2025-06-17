@@ -12,8 +12,8 @@ const Navbar = () => {
       </div>
 
       <nav className="navbar-links">
-        {navLinks.map((link, index) => (
-          <Link key={index} to={link.path} className="link">
+        {navLinks.map((link) => (
+          <Link key={link.path} to={link.path} className="link">
             {link.label}
           </Link>
         ))}

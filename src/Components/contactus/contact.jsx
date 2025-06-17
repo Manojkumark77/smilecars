@@ -1,6 +1,6 @@
 import React from "react";
-import "./contact.css";
 import { MapPin, PhoneCall, Mail } from "lucide-react";
+import "./contact.css";
 
 const ContactUs = () => {
   return (
@@ -19,25 +19,29 @@ const ContactUs = () => {
         <div className="contact-card">
           <MapPin className="contact-icon" />
           <h3>OUR LOCATION</h3>
-          <p>
+          <address>
             4/123, OMR, Rajiv Gandhi Salai
             <br />
             Thoraipakkam, Chennai - 600 097
-          </p>
+          </address>
         </div>
         <div className="contact-card">
           <PhoneCall className="contact-icon" />
           <h3>CALL US NOW</h3>
-          <p>
-            +91 7339375459
+          <address>
+            <a href="tel:+917339375459">+91 7339375459</a>
             <br />
-            +91 8765487654
-          </p>
+            <a href="tel:+918765487654">+91 8765487654</a>
+          </address>
         </div>
         <div className="contact-card">
           <Mail className="contact-icon" />
           <h3>DROP US A LINE</h3>
-          <p>smileselfdrivecars@gmail.com</p>
+          <address>
+            <a href="mailto:smileselfdrivecars@gmail.com">
+              smileselfdrivecars@gmail.com
+            </a>
+          </address>
         </div>
       </div>
 

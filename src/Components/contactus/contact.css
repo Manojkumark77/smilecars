@@ -59,10 +59,22 @@
   color: black;
 }
 
-.contact-card p {
+/* Style for <address> tag */
+.contact-card address {
   color: #555;
   font-size: 16px;
   line-height: 1.5;
+  font-style: normal; /* Overrides default italic style of <address> */
+}
+
+/* Optional: links inside address */
+.contact-card address a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-card address a:hover {
+  text-decoration: underline;
 }
 
 .contact-booking {

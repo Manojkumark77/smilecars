@@ -8,8 +8,8 @@ const CarDetails = () => {
   const navigate = useNavigate();
 
   const [car, setCar] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [isLoading, setISLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     axios
@@ -19,17 +19,17 @@ const CarDetails = () => {
           (c) => c.model === decodeURIComponent(model)
         );
         setCar(foundCar);
-        setLoading(false);
+        setISLoading(false);
       })
       .catch((err) => {
         console.error("Failed to fetch car details:", err);
-        setError("Failed to load car details");
-        setLoading(false);
+        setErrorMessage("Failed to load car details");
+        setISLoading(false);
       });
   }, [model]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (isLoading) return <p>Loading...</p>;
+  if (errorMessage) return <p>{errorMessage}</p>;
   if (!car) return <p>Car not found</p>;
 
   return (

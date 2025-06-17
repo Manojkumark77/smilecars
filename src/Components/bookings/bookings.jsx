@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
-import "./bookings.css";
+import { ErrorMsgs } from "./constants";
 import car from "../../Images/car.png";
+import "./bookings.css";
 
 const BookingForm = () => {
   const location = useLocation();
@@ -26,27 +27,22 @@ const BookingForm = () => {
   const [isFormValid, setIsFormValid] = useState(false);
 
   const validate = () => {
-    const newErrors = {};
+    const FormFieldError = {};
 
-    if (focus.name && !/^[A-Za-z]{4,15}$/.test(bookingData.name)) {
-      newErrors.name = "Name must be 4-15 letters only";
+    if (focus.name && !ErrorMsgs.name.regex.test(bookingData.name)) {
+      FormFieldError.name = ErrorMsgs.name.message;
     }
 
-    if (focus.contact && !/^\d{10}$/.test(bookingData.contact)) {
-      newErrors.contact = "Contact must be exactly 10 digits";
+    if (focus.contact && !ErrorMsgs.contact.regex.test(bookingData.contact)) {
+      FormFieldError.contact = ErrorMsgs.contact.message;
     }
 
-    if (
-      focus.email &&
-      !/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(
-        bookingData.email
-      )
-    ) {
-      newErrors.email = "Invalid email address";
+    if (focus.email && !ErrorMsgs.email.regex.test(bookingData.email)) {
+      FormFieldError.email = ErrorMsgs.email.message;
     }
 
-    if (focus.license && !/^[A-Za-z0-9]{11}$/.test(bookingData.license)) {
-      newErrors.license = "License must be exactly 11 letters and numbers";
+    if (focus.license && !ErrorMsgs.contact.regex.test(bookingData.license)) {
+      FormFieldError.license = ErrorMsgs.license.message;
     }
 
     if (
@@ -55,13 +51,13 @@ const BookingForm = () => {
       bookingData.returnDate &&
       new Date(bookingData.returnDate) <= new Date(bookingData.pickupDate)
     ) {
-      newErrors.returnDate = "Return date must be after pickup date";
+      FormFieldError.returnDate = "Return date must be after pickup date";
     }
 
-    setErrors(newErrors);
+    setErrors(FormFieldError);
 
     const isValid =
-      Object.keys(newErrors).length === 0 &&
+      Object.keys(FormFieldError).length === 0 &&
       bookingData.name &&
       bookingData.contact &&
       bookingData.email &&
@@ -236,7 +232,6 @@ const BookingForm = () => {
                 />
               </div>
             </div>
-
             <div className="datetime-row">
               <div>
                 <label htmlFor="returndate">Return Date</label>
