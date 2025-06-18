@@ -1,0 +1,67 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0 1px 4px lightgray;
+  gap: 10px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  flex: 1 1 100px;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  flex: 2 1 300px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.navbar-links a:hover {
+  color: royalblue;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 200px;
+  justify-content: flex-end;
+}
+
+.signup-button {
+  background-color: royalblue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.navbar-auth a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
